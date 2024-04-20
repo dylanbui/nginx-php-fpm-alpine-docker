@@ -1,4 +1,4 @@
-## Tham khảo từ các hệ thống
+# Tham khảo từ các hệ thống
 
 #### Bài viết
 
@@ -23,3 +23,11 @@
 [corbosman-nginx-php (Đang chủ yếu dùng thằng này, nhưng quản lý service thì dùng của thằng khác)](https://github.com/corbosman/nginx-php/)
 
 [Justintime50 source này như trên nhưng được cái tham khảo thêm cấu hình email](https://github.com/Justintime50/nginx-php-docker/tree/main)
+
+#### Ý tưởng build một con php:7.4-alpine với các phần mởi rộng, chạy php trên cổng 9000, share thư mục /var/www ra dùng chung với các server Nginx, Apache. Một server php-fpm:9000 sẽ thông dịch toàn bộ php files cho nhiều con server Nginx, Apache - Cần được đánh giá performance
+
+https://varlock.net/how-to-run-nginx-and-php-in-docker/
+
+#### Sử dụng cho source Lavarel thì cài đơn giản hơn, sử dụng "php artisan serve"
+
+[laravel-in-docker](https://buddy.works/guides/laravel-in-docker)
